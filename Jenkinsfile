@@ -9,7 +9,7 @@ pipeline {
     stage('docker build and push') {
       steps {
         sh '''
-        sudo docker build -t oyo6858/test:1:7 .
+        sudo docker build -t oyo6858/test:1.7 .
         sudo docker push oyo6858/test:1.7
         '''
       }
