@@ -9,8 +9,8 @@ pipeline {
     stage('docker build and push') {
       steps {
         sh '''
-        sudo docker build -t oyo6858/test12 .
-        sudo docker push oyo6858/test12
+        sudo docker build -t oyo6858/test:1:0 .
+        sudo docker push oyo6858/test:1.0
         '''
       }
     }
